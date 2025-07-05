@@ -1,0 +1,9 @@
+{
+  "name": "maftuhichsan/sqlite-wilayah-indonesia",
+  "description": "Database SQLite wilayah Indonesia (provinsi, kabupaten, kecamatan, desa).",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4"
+  }
+}
