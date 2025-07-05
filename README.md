@@ -38,6 +38,43 @@ Database `records.sqlite` berisi tabel:
 
 ---
 
+## Composer
+
+📦 Instalasi via Composer
+
+Paket ini tersedia di Packagist:
+
+🔗 Packagist - maftuhichsan/sqlite-wilayah-indonesia
+
+Cara Install
+
+Jalankan perintah Composer:
+
+composer require maftuhichsan/sqlite-wilayah-indonesia
+
+Setelah itu, Anda bisa menggunakan file database yang ada di dalam vendor path:
+
+vendor/maftuhichsan/sqlite-wilayah-indonesia/database/records.sqlite
+
+
+⸻
+
+✨ Contoh Penggunaan di PHP (PDO)
+
+<?php
+
+$db = new PDO(__DIR__.'/vendor/maftuhichsan/sqlite-wilayah-indonesia/database/records.sqlite');
+
+// Ambil semua provinsi
+$stmt = $db->query("SELECT * FROM provinces");
+$provinces = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+print_r($provinces);
+?>
+
+
+⸻
+
 ## 🚀 Cara Pakai
 
 ### 1️⃣ Unduh Database
@@ -62,4 +99,6 @@ SELECT * FROM districts WHERE regency_id = '3171';
 SELECT * FROM villages WHERE district_id = '3171020';
 
 ```
-##  Endpoint API (Coming Soon): 
+## 🌐 Endpoint API (Coming Soon): 
+
+Status API: Sedang dalam pengembangan.
