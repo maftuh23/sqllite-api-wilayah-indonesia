@@ -1,6 +1,6 @@
 {
-  "name": "@maftuh23/sqllite-wilayah-indonesia",
-  "version": "1.0.5",
+  "name": "@maftuh23/sqlite-wilayah-indonesia",
+  "version": "1.0.6",
   "description": "Database SQLite wilayah Indonesia (provinsi, kabupaten, kecamatan, desa) berdasarkan BPS (Badan Pusat Statistik).",
   "main": "index.js",
   "repository": {

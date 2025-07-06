@@ -82,13 +82,13 @@ print_r($provinces);
 
 Paket ini tersedia di NPM:
 
-🔗 NPM - sqllite-wilayah-indonesia
+🔗 NPM - sqlite-wilayah-indonesia
 
 Cara Install
 
 Jalankan perintah package manager NPM:
 
-npm install sqllite-wilayah-indonesia
+npm install sqlite-wilayah-indonesia
 
 ⸻
 
