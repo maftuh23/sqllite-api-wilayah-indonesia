@@ -1,6 +1,6 @@
 {
   "name": "maftuhichsan/sqlite-wilayah-indonesia",
-  "description": "Database SQLite wilayah Indonesia (provinsi, kabupaten, kecamatan, desa).",
+  "description": "Database SQLite wilayah Indonesia (provinsi, kabupaten, kecamatan, desa) berdasarkan BPS (Badan Pusat Statistik).",
   "type": "library",
   "license": "MIT",
   "require": {
