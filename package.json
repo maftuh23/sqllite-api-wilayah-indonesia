@@ -2,7 +2,7 @@
   "name": "@maftuh23/sqlite-wilayah-indonesia",
   "version": "1.0.6",
   "description": "Database SQLite wilayah Indonesia (provinsi, kabupaten, kecamatan, desa) berdasarkan BPS (Badan Pusat Statistik).",
-  "main": "index.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/maftuh23/sqllite-api-wilayah-indonesia.git"
@@ -16,5 +16,10 @@
     "Badan Pusat Statistik"
   ],
   "author": "Maftuh Ichsan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "sqlite3": "^5.1.7"
+  }
 }
