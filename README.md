@@ -39,6 +39,38 @@ Database `records.sqlite` berisi tabel:
 
 ---
 
+## Docker Image
+📦 Tersedia Docker Image
+
+🔗 Docker Hub - [maftuhichsan/sqlite-wilayah-indonesia](https://hub.docker.com/r/maftuh23/sqlite-wilayah-indonesia)
+
+Cara Pull dan Jalankan (Docker Compose)
+
+1. Tambahkan ke docker-compose.yml:
+```yaml
+version: '3.8'
+
+services:
+  sqlite-wilayah:å
+    image: maftuh23/sqlite-wilayah-indonesia:latest
+    container_name: sqlite-wilayah
+    volumes:
+      - ./data:/data  # Simpan database di folder ./data
+    restart: unless-stopped
+```
+2. Jalankan perintah:
+```bash
+docker-compose up -d
+```
+3. Akses file database SQLite di folder ./data/records.sqlite
+atau sesuai mount volume yang Anda set.
+
+Cara Pull Manual (Tanpa Compose):
+```bash
+docker pull maftuh23/sqlite-wilayah-indonesia:latest
+docker run -d --name sqlite-wilayah -v $(pwd)/data:/data maftuh23/sqlite-wilayah-indonesia:latest
+``` 
+
 ## Composer
 
 📦 Instalasi via Composer
