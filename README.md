@@ -178,6 +178,30 @@ SELECT * FROM sub_districts WHERE sub_district_city_code = '3171';
 SELECT * FROM villages WHERE village_sub_district_code = '3171020';
 
 ```
-## 🌐 Endpoint API (Coming Soon): 
+## 🌐 Endpoint API : 
 
-Status API: Sedang dalam pengembangan.
+URL : https://api.kirimin.id
+
+### `/province`
+
+Mengembalikan daftar provinsi.
+
+Contoh: [`/api/province`](https://api.kirimin.id/api/province)
+
+### `/city/{province.id}`
+
+Mengembalikan daftar kota.
+
+Contoh: [`/api/city/33`](https://api.kirimin.id/api/city/33)
+
+### `/sub_district/{city.id}`
+
+Mengembalikan daftar Kecamatan.
+
+Contoh: [`/api/sub_district/3301`](https://api.kirimin.id/api/sub_district/3301)
+
+### `/village/{sub_district.id}`
+
+Mengembalikan daftar Kelurahan/Desa.
+
+Contoh: [`/api/village/3372020`](https://api.kirimin.id/api/village/3372020)
