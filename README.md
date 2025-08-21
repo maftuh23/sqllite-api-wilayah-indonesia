@@ -26,16 +26,21 @@ Data ini berguna untuk aplikasi web, mobile, dan API yang membutuhkan referensi 
 
 Database `records.sqlite` berisi tabel:
 
+- `cities`
+- `countries`
+- `postal_codes`
 - `provinces`
-- `regencies`
-- `districts`
+- `sqlite_sequence`
+- `sub_districts`
+- `translations`
 - `villages`
 
 **Relasi antar tabel:**
 
-- `regencies.province_id` → `provinces.id`
-- `districts.regency_id` → `regencies.id`
-- `villages.district_id` → `districts.id`
+- `cities.city_province_code` → `provinces.province_code`
+- `sub_districts.sub_district_city_code` → `cities.city_code`
+- `villages.village_sub_district_code` → `sub_districts.sub_district_code`
+- `postal_codes` berisi kode pos untuk berbagai wilayah
 
 ---
 
